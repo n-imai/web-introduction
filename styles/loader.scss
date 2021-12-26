@@ -1,13 +1,13 @@
-@import "modules/variables";
+@import 'modules/variables';
 @import 'modules/mixin';
 
-#global-container {
+.pace-done #global-container {
   transition: opacity 1s;
+  opacity: 1;
 }
 
-.pace-running #global-container {
+#global-container {
   opacity: 0;
-  visibility: hidden;
 }
 
 .pace {
@@ -47,10 +47,10 @@
 
   margin: 0 auto;
   @include animation(
-    $name: sk-rotateplane,
-    $duration: 1.2s,
-    $iteration-count: infinite,
-    $timing-function: ease-in-out
+          $name: sk-rotateplane,
+          $duration: 1.2s,
+          $iteration-count: infinite,
+          $timing-function: ease-in-out
   );
 }
 

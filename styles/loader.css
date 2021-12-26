@@ -1,9 +1,9 @@
-#global-container {
-  transition: opacity 1s; }
+.pace-done #global-container {
+  transition: opacity 1s;
+  opacity: 1; }
 
-.pace-running #global-container {
-  opacity: 0;
-  visibility: hidden; }
+#global-container {
+  opacity: 0; }
 
 .pace {
   z-index: 2000;
